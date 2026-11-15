@@ -16,15 +16,15 @@ with st.sidebar:
 
 ### Opción 2: Menú horizontal
 opciones_2 = option_menu(
-    menu_title="Selecciona una sección: ", 
+    menu_title="Selecciona una sección: ", #edición: sí o no (NOne
     options=['Presentación', 'Experiencia', 'Gráficos'], 
-    icons=['0-circle','1-circle', '2-circle'], 
+    icons=['0-circle','1-circle', '2-circle'], #podemos cambiarlo con una página
     menu_icon="cast", default_index=0, orientation="horizontal")
 
-if opciones == 'Presentación':
-    st.markdown("<h1 style='text-align: center; font-size: 50 px; color: black'>Nombre del blog</h1>", unsafe_allow_html=True)
+if opciones_2 == 'Presentación': #cada una de las opciones. 
+    st.markdown("<h1 style='text-align: center; font-size: 50 px; color: black'>Nombre del blog</h1>", unsafe_allow_html=True)#aquí decidimos qué queremos. En nombre de Blog cambiamos
 
-    # Alumno a
+    # Alumno a #decidir quien es quien 
     col1, col2 = st.columns(2)
     
     col1.image("ellie.png", caption='Ellie', width=300)
@@ -40,26 +40,29 @@ if opciones == 'Presentación':
     """
     col2.markdown(f"<div style='text-align: justify; font-size: 15px;'>{texto}</div>", unsafe_allow_html=True)
 
-    # Alumno b
+    # Alumno b #JACKELINE
     col1, col2 = st.columns(2)
     
     texto_2 = """
-    Aquí escribe una presentación creativa sobre ti.
-    ¿Quién eres? 
-    ¿De dónde eres? 
-    ¿Qué estudias? 
-    ¿Qué te gusta de tu carrera? 
-    ¿Qué te gustaría hacer en el futuro? 
-    ¿Qué te gusta hacer en tu tiempo libre?
+    ¡Hola! Soy Jackeline Uscamayta, tengo 20 años.  
+    Soy estudiante de Publicidad, amante de las películas 
+    de terror y de toda situación paranormal. 
+    Un dato curioso de mí es que tengo una colección de Barbies 
+    y espero en el futuro tener una colección de sus casas 
+    Mi comida favorita es el Ají de Gallina pero el que prepara mi abuelita 
+    En mis tiempos libres, disfruto cocinar y probar nuevas recetas, grabo y 
+    edito videos. Por último, uno de mis sueños es formar parte de una 
+    película de terror, puede ser como actriz o parte de la dirección de arte.
+
     """
     col1.markdown(f"<div style='text-align: justify; font-size: 15px;'>{texto_2}</div>", unsafe_allow_html=True)
     
-    col2.image("ellie.png", caption='Ellie', width=300)
+    col2.image("Foto.jpg", caption='Jacky', width=300) #hasta aquí termina, podemos cambiar
 
     # Alumno c
     col1, col2 = st.columns(2)
     
-    col1.image("ellie.png", caption='Ellie', width=300)
+    col1.image("ellie.png", caption='Ellie', width=300)#podemos cambiar si queremos
     
     texto_3 = """
     Aquí escribe una presentación creativa sobre ti.
@@ -72,9 +75,9 @@ if opciones == 'Presentación':
     """
     col2.markdown(f"<div style='text-align: justify; font-size: 15px;'>{texto_3}</div>", unsafe_allow_html=True)
     
-elif  opciones == 'Experiencia':
+elif  opciones_2 == 'Experiencia':
 
-    st.markdown("<h1 style='text-align: center; font-size: 50 px; color: black'>Nombre a la sección de experiencia 💻</h1>", unsafe_allow_html=True)
+    st.markdown("<h1 style='text-align: center; font-size: 50 px; color: black'>Nombre a la sección de experiencia 💻</h1>", unsafe_allow_html=True) #podemos cambias experiencia.
 
     # Alumno a
     texto_4 = """
@@ -101,7 +104,7 @@ elif  opciones == 'Experiencia':
                        use_container_width=True
             )
 
-    # Alumno b
+    # Alumno b #JACKELINE EXPERIENCIA
     texto_5 = """
     Aquí escribe tu experiencia aprendiendo a programar. 
     ¿Cómo te sentiste al principio?
@@ -111,16 +114,16 @@ elif  opciones == 'Experiencia':
     """
     st.markdown(f"<div style='text-align: justify; font-size: 18px;'>{texto_5}</div>", unsafe_allow_html=True)
         
-    # Formato YouTube
-    st.subheader("🎥 Título apropiado video 1")
-    st.video("https://www.youtube.com/watch?v=X_Z7d04x9-E")
+    # Formato YouTube 
+    st.subheader("🎥 Título apropiado video 1") #podemos cambiar el ícono
+
         
     # Formato Google Drive
     st.subheader("🎥 Título apropiado video 2")
     
-    col1, col2, col3 = st.columns([1, 2, 1])
+    col1, col2, col3 = st.columns([1, 2, 1]) #queremos que el botón se encuentre en el medio
     
-    with col2:  
+    with col2: #podemos duplicar  
         st.link_button("🎥 Texto del botón",
                        "https://drive.google.com/file/d/1REvRXSu3GuGD73w8j44135MkRiezd0gP/view?usp=drive_link",
                        use_container_width=True
@@ -148,7 +151,7 @@ elif  opciones == 'Experiencia':
     with col2:  
         st.link_button("🎥 Texto del botón",
                        "https://drive.google.com/file/d/1REvRXSu3GuGD73w8j44135MkRiezd0gP/view?usp=drive_link",
-                       use_container_width=True
+                       use_container_width=True #hasta aquí es experiencia
             )
             
 else:
@@ -160,7 +163,7 @@ else:
     graficos = ['Gráfico_1', 'Gráfico_2', 'Mapa_1'] 
     grafico_seleccionado = st.selectbox('Selecciona un gráfico', graficos)
     
-    if grafico_seleccionado == 'Gráfico_1':
+    if grafico_seleccionado == 'Gráfico_1': #estructura del gráfico
         st.subheader("📊 Gráfico 1: Lenguas aisladas")
         texto_7 = """
         Interpretación del Gráfico 1
@@ -189,8 +192,8 @@ else:
         """
         st.markdown(f"<div style='text-align: justify; font-size: 18px;'>{texto_9}</div>", unsafe_allow_html=True)
             
-        with open("mapa.html", "r", encoding="utf-8") as mapa:
+        with open("mapa_pilotos_2.html", "r", encoding="utf-8") as mapa:
                 html_content = mapa.read()
     
-        components.html(html_content,height=600)
+        components.html(html_content,height=600) #agregar al repositorio el documento Requeriments.txt para importar Streamlit_option_menu
     
