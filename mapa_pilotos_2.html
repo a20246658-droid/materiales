@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_f1d78782fcfc82fc70b8256270b54e47 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+
+            <style>html, body {
+                width: 100%;
+                height: 100%;
+                margin: 0;
+                padding: 0;
+            }
+            </style>
+
+            <style>#map {
+                position:absolute;
+                top:0;
+                bottom:0;
+                right:0;
+                left:0;
+                }
+            </style>
+
+            <script>
+                L_NO_TOUCH = false;
+                L_DISABLE_3D = false;
+            </script>
+
+        
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_f1d78782fcfc82fc70b8256270b54e47" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_f1d78782fcfc82fc70b8256270b54e47 = L.map(
+                "map_f1d78782fcfc82fc70b8256270b54e47",
+                {
+                    center: [20.0, 0.0],
+                    crs: L.CRS.EPSG3857,
+                    ...{
+  "zoom": 2,
+  "zoomControl": true,
+  "preferCanvas": false,
+}
+
+                }
+            );
+            L.control.scale().addTo(map_f1d78782fcfc82fc70b8256270b54e47);
+
+            
+
+        
+    
+            var tile_layer_4c6d405262017ff52d548cf2dad33dfb = L.tileLayer(
+                "https://tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {
+  "minZoom": 0,
+  "maxZoom": 18,
+  "maxNativeZoom": 18,
+  "noWrap": false,
+  "attribution": "\u0026copy; \u003ca href=\"https://www.openstreetmap.org/copyright\"\u003eOpenStreetMap contributors\u003c/a\u003e | Datos bajo licencia \u003ca href=\"https://opendatacommons.org/licenses/odbl/\"\u003eODbL\u003c/a\u003e",
+  "subdomains": "abc",
+  "detectRetina": false,
+  "tms": false,
+  "opacity": 1,
+  "referrerPolicy": "strict-origin",
+}
+
+            );
+        
+    
+            tile_layer_4c6d405262017ff52d548cf2dad33dfb.addTo(map_f1d78782fcfc82fc70b8256270b54e47);
+        
+    
+            var marker_21edfd0ed9b6c75a1cf9531a4e2cc11f = L.marker(
+                [20.682651516889788, -103.36138230803174],
+                {
+}
+            ).addTo(map_f1d78782fcfc82fc70b8256270b54e47);
+        
+    
+            var icon_72552d4319a95a42a5ff6e0346089223 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "car",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_f862704ed953a42a455992308b9770da = L.popup({
+  "maxWidth": 350,
+});
+
+        
+            
+                var html_98cfc94fffc59d1a8c4749fd8cb0bd54 = $(`<div id="html_98cfc94fffc59d1a8c4749fd8cb0bd54" style="width: 100.0%; height: 100.0%;">                 <div style="text-align:center; margin-bottom:15px;">                     <img src="https://tse2.mm.bing.net/th/id/OIP.jEMegCfAvXg4EV7IUPxzgQHaE8?r=0&pid=Api&h=220&P=0"                          width="50"                          height="67"                          style="object-fit:cover; border-radius:50%;">                     <b>S. PEREZ</b>                     <span>Force India</span>                     <span>101</span>                      </div>                 </div>`)[0];
+                popup_f862704ed953a42a455992308b9770da.setContent(html_98cfc94fffc59d1a8c4749fd8cb0bd54);
+            
+        
+
+        marker_21edfd0ed9b6c75a1cf9531a4e2cc11f.bindPopup(popup_f862704ed953a42a455992308b9770da)
+        ;
+
+        
+    
+    
+            marker_21edfd0ed9b6c75a1cf9531a4e2cc11f.bindTooltip(
+                `<div>
+                     México
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_21edfd0ed9b6c75a1cf9531a4e2cc11f.setIcon(icon_72552d4319a95a42a5ff6e0346089223);
+            
+    
+            var marker_1b4c1aeb2e7be5087a29af5e7354ecc6 = L.marker(
+                [51.90857065759334, -0.19874858749447177],
+                {
+}
+            ).addTo(map_f1d78782fcfc82fc70b8256270b54e47);
+        
+    
+            var icon_8a25c8eae49e8daf6c9101a6d2359172 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "car",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_5e4b6ad9a2407803c5d53f8e03de0563 = L.popup({
+  "maxWidth": 350,
+});
+
+        
+            
+                var html_2a88bceb2f0767a83b60bd3fd492fba8 = $(`<div id="html_2a88bceb2f0767a83b60bd3fd492fba8" style="width: 100.0%; height: 100.0%;">                 <div style="text-align:center; margin-bottom:15px;">                     <img src="https://e0.365dm.com/23/03/1600x900/skysports-lewis-hamilton-f1_6073865.jpg?20230301095933"                          width="50"                          height="67"                          style="object-fit:cover; border-radius:50%;">                     <b>L. HAMILTON</b>                     <span>Mercedes</span>                     <span>380</span>                      </div>                 </div>`)[0];
+                popup_5e4b6ad9a2407803c5d53f8e03de0563.setContent(html_2a88bceb2f0767a83b60bd3fd492fba8);
+            
+        
+
+        marker_1b4c1aeb2e7be5087a29af5e7354ecc6.bindPopup(popup_5e4b6ad9a2407803c5d53f8e03de0563)
+        ;
+
+        
+    
+    
+            marker_1b4c1aeb2e7be5087a29af5e7354ecc6.bindTooltip(
+                `<div>
+                     Reino Unido
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_1b4c1aeb2e7be5087a29af5e7354ecc6.setIcon(icon_8a25c8eae49e8daf6c9101a6d2359172);
+            
+    
+            tile_layer_4c6d405262017ff52d548cf2dad33dfb.addTo(map_f1d78782fcfc82fc70b8256270b54e47);
+        
+    
+                marker_21edfd0ed9b6c75a1cf9531a4e2cc11f.setIcon(icon_72552d4319a95a42a5ff6e0346089223);
+            
+    
+                marker_1b4c1aeb2e7be5087a29af5e7354ecc6.setIcon(icon_8a25c8eae49e8daf6c9101a6d2359172);
+            
+</script>
+</html>
